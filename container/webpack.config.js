@@ -12,6 +12,7 @@ module.exports = {
       remotes: {
         products:
           "products@https://fluffy-spoon-j9gwv79vqxjhq4v-8081.app.github.dev/remoteEntry.js",
+        cart: "cart@https://fluffy-spoon-j9gwv79vqxjhq4v-8082.app.github.dev/remoteEntry.js",
       },
     }),
     new HtmlWebpackPlugin({
