@@ -6,12 +6,13 @@ module.exports = {
   devServer: {
     port: 8080,
   },
-    plugins: [
-        new ModuleFederationPlugin({
-            name: "container", 
-            remotes: {
-                products: 'products@http://localhost:8081/remoteEntry.js'
-            }
+  plugins: [
+    new ModuleFederationPlugin({
+      name: "container",
+      remotes: {
+        products:
+          "products@https://fluffy-spoon-j9gwv79vqxjhq4v-8081.app.github.dev/remoteEntry.js",
+      },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
