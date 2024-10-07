@@ -12,7 +12,7 @@ module.exports = {
             remotes: {
                 products: 'products@http://localhost:8081/remoteEntry.js'
             }
-    })
+    }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
